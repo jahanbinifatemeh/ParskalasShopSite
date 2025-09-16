@@ -13,6 +13,7 @@
     direction: rtl;
     writing-mode: horizontal-tb;
     text-orientation: mixed;
+    --font-family: Vazirmatn;
 }
 
 
@@ -282,8 +283,8 @@ body {
     border-radius: 12px;
     height: 370px;
     display: grid;
-    grid-template-columns: 1.5fr 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr ;
-    
+    grid-template-columns: 1.5fr 1.1fr 1.1fr 1.1fr 1.1fr 1.1fr;
+
     /* grid-template-areas:
         "f f f f f f f e d c b a "
     ; */
@@ -299,82 +300,135 @@ body {
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     height: 94%;
+    position: relative;
 
 
 }
 
-/* .special-sail-1 {
-    grid-area: a;
-}
-
-.special-sail-2 {
-    grid-area: b;
-}
-
-.special-sail-3 {
-    grid-area: c;
-}
-
-.special-sail-4 {
-    grid-area: d;
-}
-
-.special-sail-5 {
-    grid-area: e;
-}
-
-.special-sail-6 {
-    grid-area: f;
-} */
-.num1 .picture{
+.num1 .picture {
     text-align: center;
-    
+
 }
 
-.picture{
+.num1 .picture-1 {
+    z-index: 99;
+    opacity: 1;
+}
+
+.num1 .picture-1:hover {
+    opacity: 0;
+}
+
+.num1 .picture-2 {
+    position: absolute;
+    z-index: 100;
+    right: 22px;
+    opacity: 0;
+}
+
+.num1 .picture-2:hover {
+    opacity: 1;
+    transition: .2s ease-in-out;
+}
+
+.picture {
     width: 100%;
     height: 50%;
     margin-top: 8px;
-    
-    
-    
+
+
+
 }
-.picture img{
+
+.picture img {
     width: 150px;
     padding-top: 3px;
-    
+
 }
-.text{
+
+.text {
     width: 100%;
     height: 30%;
     padding: 5px;
-    
+
+
 
 }
-.text span{
+
+.text span {
     display: block;
     text-align: left;
     padding-left: 15px;
+    position: absolute;
+    top: 270px;
+    left: 0;
+
 }
-.num1 a{
-    
+
+.num1 a {
+
     width: 10%;
     height: 20px;
     text-decoration: none;
 }
+
 .cart-icon {
-  width: 40px;
-  height: 40px;
-  background: #EE9495;       /* بک‌گراند صورتی */
-  border-radius: 12px;    /* گوشه‌گرد */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    background: #EE9495;
+    /* بک‌گراند صورتی */
+    border-radius: 12px;
+    /* گوشه‌گرد */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
 }
 
 .cart-icon svg {
-  width: 24px;
-  height: 24px;
-  fill: white;            /* رنگ آیکون سفید */
+    width: 24px;
+    height: 24px;
+    fill: white;
+    /* رنگ آیکون سفید */
+}
+
+.num2 .picture {
+    margin-top: 40px;
+    margin-right: 70px;
+}
+
+.num2 a button {
+    font-weight: 600;
+    font-family: var(--font-family);
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 0 15px;
+    margin: 40px 80px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.products-top {
+    width: 100%;
+    
+    margin-top: 30px;
+    display: flex;
+    gap: 22px;
+}
+.products-top .product1 , .product2{
+    width: 50%;
+    height: 270px;
+    border-radius: 12px;
+}
+.product1{
+    background-image: url(https://beauty.parskalas.com/wp-content/uploads/2023/03/moshavere-scaled.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.product2{
+    background-image: url(https://beauty.parskalas.com/wp-content/uploads/2023/03/darman-post.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
