@@ -648,17 +648,17 @@
 
 ////////////////////////////////////////////////////////////////////////
 
-let person = { name: "mohammad" };
+// let person = { name: "mohammad" };
 
-Object.defineProperty(person, 'name', {
-  writable: false,
-  enumerable: false,
-});
+// Object.defineProperty(person, 'name', {
+//   writable: false,
+//   enumerable: false,
+// });
 
-console.log(Object.keys(person));
+// console.log(Object.keys(person));
 
-person.name = "ali";
-console.log(person);
+// person.name = "ali";
+// console.log(person);
 
 ///////////////////////////////////////////////////////////////////////
 
